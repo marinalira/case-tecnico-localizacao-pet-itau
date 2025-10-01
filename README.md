@@ -30,6 +30,13 @@ Esta API foi desenvolvida como parte de um case técnico para facilitar a locali
 
 ## Como Executar
 
+### Clonando repositório do git hub
+
+```bash
+  # Executar no terminal
+git clone https://github.com/marinalira/case-tecnico-localizacao-pet-itau.git
+```
+
 ### Pré-requisitos
 
 - Java 17 ou superior
@@ -67,7 +74,7 @@ Content-Type: application/json
 ```
 - **Configuração no postman**:
 
-![img.png](img.png)
+![img.png](readmeImages/img.png)
 
 **Resposta (201 Created):**
 ```json
@@ -86,7 +93,7 @@ Content-Type: application/json
   "createdAt": "2025-09-30T23:34:29"
 }
 ```
-![img_1.png](img_1.png)
+![img_1.png](readmeImages/img_1.png)
 
 ### 2. Buscar Última Localização
 
@@ -98,11 +105,11 @@ GET http://localhost:8080/api/v1/pet-locations/sensor/{sensorId}/last
 
 **Exemplo:**
 ```http
-GET http://localhost:8080/api/v1/pet-locations/api/v1/pet-locations/sensor/TESTE/last
+GET http://localhost:8080/api/v1/pet-locations/sensor/SENSORTESTE/last
 ```
 - **Configuração no postman**:
 
-![img_2.png](img_2.png)
+![img_2.png](readmeImages/img_2.png)
 
 **Resposta (200 OK):**
 ```json
@@ -121,7 +128,7 @@ GET http://localhost:8080/api/v1/pet-locations/api/v1/pet-locations/sensor/TESTE
   "createdAt": "2025-09-30T23:34:29"
 }
 ```
-![img_3.png](img_3.png)
+![img_3.png](readmeImages/img_3.png)
 
 ### Executar os testes pelo terminal com o seguinte comando:
 
@@ -138,11 +145,11 @@ Após executar o comando acima o relatório estará disponível em:
 # Verificar cobertura mínima (70%)
 ./gradlew jacocoTestCoverageVerification
 ```
-![img_4.png](img_4.png)
+![img_4.png](readmeImages/img_4.png)
 - Para abrir o html clique com o botão direito do mouse em cima de index.html > Open in > Browser
-![img_5.png](img_5.png)
+![img_5.png](readmeImages/img_5.png)
 - A página aberta será assim:
-![img_6.png](img_6.png)
+![img_6.png](readmeImages/img_6.png)
 ## Testes e Cobertura de Código
 
 A aplicação possui **testes unitários e de integração** cobrindo:
